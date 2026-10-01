@@ -1,0 +1,41 @@
+# ---- packaged builds / distribution zips (large, rebuilt from the project) ----
+/Build/
+/Dist/
+
+# ---- Unreal project: generated / cached ----
+Crank/Binaries/
+Crank/Intermediate/
+Crank/Saved/
+Crank/DerivedDataCache/
+Crank/Plugins/**/Binaries/
+Crank/Plugins/**/Intermediate/
+
+# Build/ only keeps icons and pak blacklists (FileOpenOrder logs etc. are generated)
+Crank/Build/*
+!Crank/Build/*/
+Crank/Build/*/**
+!Crank/Build/*/PakBlacklist*.txt
+!Crank/Build/**/*.ico
+
+# IDE project files (regenerated from the .uproject)
+.vs/
+.idea/
+*.sln
+*.slnx
+*.suo
+*.sdf
+*.opensdf
+*.VC.db
+*.VC.opendb
+*.code-workspace
+
+# ---- Blender / Python ----
+*.blend1
+*.blend2
+__pycache__/
+*.pyc
+
+# ---- OS ----
+Thumbs.db
+Desktop.ini
+.DS_Store
